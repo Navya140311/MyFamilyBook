@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <center>
+        <h1>
+            My Family Book
+        </h1>
+        <br>
+        <br>
+        <img id="book" src="https://images-na.ssl-images-amazon.com/images/I/51PKWzbn%2BQL._AC_UL600_SR600,600_.jpg"
+            height="300px">
+        <div>
+            <button id="Button" type="button" onclick="nextslide()">Next</button>
+        </div>
+        <h1 id="display" sweta</h1>
+    </center>
+</body>
+<script>
+    var images = [
+        "https://images.cdn3.stockunlimited.net/preview1300/father-in-a-suit_1246033.jpg",
+        "https://i.pinimg.com/originals/f8/a9/dd/f8a9dd5024d6ebed33ae33db724d84e3.jpg",
+        "https://lh3.googleusercontent.com/proxy/3UxwAzFbzMk68fwWLDC0mZwdxWpakoNLG657_fFB7sCWv0Mk1H4kOoEOXveIKbI7ZNomJPdvJzPe-8_eonhzCrH-Nm1EhltrPQ",
+        "https://i.pinimg.com/originals/65/84/e3/6584e3b2ff4c510a6a4eb53cc13b1ba5.png"
+    ];
+    var names = ["Mr. Ritesh Bhatt",
+        "Mrs. Sweta  Bhatt",
+        "Dr. Ramesh Chandra Srivastava",
+        "Ms. Navya Bhatt"];
+
+    var i = 0;
+    function nextslide() {
+        document.getElementById("book").src = images[i];
+        document.getElementById("display").innerHTML = names[i];
+
+        i++;
+        if (i == 4) {
+            i = 0;
+        };
+    }
+
+</script>
+
+</html>
